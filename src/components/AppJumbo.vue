@@ -15,10 +15,10 @@ components:{
 <template>
   <div class="np-container">
 
-   <div class="container">
+   <div class="container-fluid container-xl">
 
     <AppHeader/>
-    
+
    </div>
 
   </div>
