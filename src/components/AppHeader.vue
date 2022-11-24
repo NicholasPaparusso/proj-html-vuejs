@@ -41,9 +41,6 @@ data(){
 },
 
 methods:{
-
-//  const logoMenu = document.querySelector('.logo-menu').addEventListener
-
 }
 
 }
@@ -75,7 +72,7 @@ methods:{
 
         <li class="logo-menu"><img  tabindex="0"
           @click="(this.openLoMenu = !this.openLoMenu) && (this.isDdOn = false)" 
-        @blur="(this.openLoMenu = false) && (this.isDdOn = false)"
+          @blur="(this.openLoMenu = false) && (this.isDdOn = false)"
           src="shape-logo.png" alt="">
           
           <ul v-show="this.openLoMenu" class="np-dropdown">
@@ -104,7 +101,6 @@ methods:{
 @import '../style/partials/var' ;
 
 .nav{
-  padding: 25px 45px;
   .logo{
   width: 157px;
   }
