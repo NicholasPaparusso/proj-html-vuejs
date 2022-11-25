@@ -23,7 +23,7 @@ name : 'AppWidget',
   .widget{
     width: 40px;
     position: fixed;
-    top: 150px;
+    top: 250px;
     right: 0%;
     background-color: white;
     z-index: 3;

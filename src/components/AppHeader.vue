@@ -55,7 +55,7 @@ methods:{
       </div>
     </div>
 
-    <div class="col-4 col-md-6 offset-md-1">
+    <div class="col-8 col-sm-4 col-md-6 offset-md-1">
       <ul class="link" >
 
         <li v-for="(item, index) in this.nav" :key="index"><a 
@@ -84,13 +84,14 @@ methods:{
       </ul>
     </div>
 
-    <div class="col-4 col-md-2 offset-lg-1">
+    <div class="col-0 col-sm-4 col-md-2 offset-lg-1 d-flex justify-content-center">
       <ul class="social">
         <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
         <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
       </ul>
+
     </div>
 
   </div>
@@ -274,7 +275,7 @@ methods:{
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 575px) {
   .link li:first-child {
     display: none;
   }
@@ -287,7 +288,25 @@ methods:{
       display: block;
     }
   }
+
+  .social{
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    z-index: 3;
+    font-size: 16px;
+    row-gap: 25px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: -2px 0 10px -2px  rgba($color: #000000, $alpha: .2);
+
+  }
 }
+
 
 
 

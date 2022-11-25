@@ -53,8 +53,6 @@ components:{
   overflow: hidden;
 }
 .np-container{
-  padding: 30px 65px 0 65px;
-
   .cta{
     padding-top: 140px ;
 
@@ -131,13 +129,16 @@ components:{
 
    }
 
-   @media only screen and (max-width: 992px){
+   @media only screen and (max-width: 993px){
 .cta{
   padding-top: 40px;
 }
   h1{
     font-size: 36px !important;
     text-align: center;
+  }
+  img{
+    padding: 0 50px 0 50px
   }
 }
 }

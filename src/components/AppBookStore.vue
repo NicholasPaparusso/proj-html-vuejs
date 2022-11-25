@@ -5,7 +5,13 @@ name : '',
 </script>
 
 <template>
-  
+
+  <div class="container np-container">
+    
+
+
+  </div>
+
 </template>
 
 
