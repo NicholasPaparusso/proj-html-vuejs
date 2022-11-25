@@ -101,6 +101,7 @@ methods:{
 @import '../style/partials/var' ;
 
 .nav{
+  z-index: 2;
   .logo{
   width: 157px;
   }

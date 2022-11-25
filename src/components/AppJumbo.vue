@@ -116,13 +116,13 @@ components:{
       max-height: 653px;
       min-width: 246px;
       min-height: 300px;
-      z-index: 2;
+      z-index: 1;
     }
 
     img:last-of-type{
       position: absolute;
-      left: 25%;
-      bottom: -15%;
+      left: 20%;
+      bottom: -10%;
       max-width: 534px;
       max-height: 600px;
       min-width: 267;
