@@ -1,11 +1,19 @@
 @import './partials/var' ;
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
-@import '/node_modules/@fontsource/poppins/400.css';
-@import '/node_modules/@fontsource/poppins/500.css';
-@import '/node_modules/@fontsource/poppins/600.css';
-@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
 
-body { font-family: "Poppins", sans-serif; }
+@import '/node_modules/@fontsource/playfair-display/400.css';
+@import '/node_modules/@fontsource/playfair-display/500.css';
+@import '/node_modules/@fontsource/playfair-display/600.css';
+@import '/node_modules/@fontsource/playfair-display/700.css';
+@import '/node_modules/@fontsource/playfair-display/800.css';
+@import '/node_modules/@fontsource/playfair-display/900.css';
+@import '/node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '/node_modules/@fontsource/red-hat-display/400.css';
+@import '/node_modules/@fontsource/red-hat-display/500.css';
+@import '/node_modules/@fontsource/red-hat-display/600.css';
+@import '/node_modules/@fontsource/red-hat-display/700.css';
+
+body
 
 img{
   width: 100%;
@@ -23,3 +31,7 @@ a{
     color: inherit;
   }
 }
+
+h1,h2,h3,h4{ font-family: "Playfair Display", serif; }
+
+body{font-family: "Red Hat Display", sans-serif;}

@@ -109,13 +109,14 @@ methods:{
     width: 100%;
     justify-content: center;
     display: flex;
-    gap: 50px;
+    gap: 35px;
     li{
       position: relative;
         top: 0;
       .normal-link{
         color: #3f3a64;
-        font-size: 1em;
+        font-size: 16px;
+        font-weight: 500;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -130,7 +131,7 @@ methods:{
           bottom: -10px;
           width: 100%;
           height: 2px;
-          background-color: #3f3a64;
+          background-color: #20ad96;
           border-radius: 20px;
           opacity: 0;
           transition: all .5s linear;
@@ -179,20 +180,24 @@ methods:{
   top: 35px;
   left: 50%;
   transform: translate(-50%);
-  width: 90px;
+  width: 150px;
   padding: 10px 5px;
-  background-color: rgba($color: #3f3a64, $alpha: .7);
+  background-color: rgba($color: white, $alpha: .7);
   border-radius: 20px;
   text-align: center;
   transition: all .5s linear;
 
+  &:hover{
+    background-color: white;
+  }
+
   a{
     font-size: .9em;
-    line-height: 30px;
-    color: #f7f7fd ;
+    line-height: 50px;
+    color: #3f3a64 ;
     &:hover{
-      color: white;
-      text-decoration: underline;
+      color: black;   
+     
     }
   }
 }
