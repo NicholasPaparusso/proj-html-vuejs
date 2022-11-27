@@ -49,6 +49,7 @@ components:{
 
 .main-wrapper{
   background-image: url('../assets/img/background-pattern-wavify.png');
+  background-repeat: repeat;
   background-color: #f6f6fd ;
   overflow: hidden;
 }
@@ -65,7 +66,7 @@ components:{
     h1{
       font-weight: 400 ;
       font-size: 56px ;
-      line-height: 1.34em ;
+      line-height: 75px;
       max-width: 440px;
     }
 
@@ -81,7 +82,7 @@ components:{
     .np-button{
       width: 274px;
       min-height: 55px;
-      background-color: #20ad96;
+      background-color: $primary;
       color: #fff;
       font-weight: 700;
       font-size: .8em;
@@ -92,7 +93,7 @@ components:{
       }
 
       &:hover{
-        background-color: #3f3a64;
+        background-color: $secondary;
       }
     }
   }

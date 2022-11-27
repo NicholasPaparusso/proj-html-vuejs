@@ -1,6 +1,14 @@
 <script>
+
+import AppSocialNav from './AppSocialNav.vue';
+
 export default {
 name : 'AppHeader',
+
+
+components:{
+  AppSocialNav,
+},
 
 data(){
   return{
@@ -85,12 +93,8 @@ methods:{
     </div>
 
     <div class="col-0 col-sm-4 col-md-2 offset-lg-1 d-flex justify-content-center">
-      <ul class="social">
-        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
+
+      <AppSocialNav/>
 
     </div>
 
@@ -116,7 +120,7 @@ methods:{
       position: relative;
         top: 0;
       .normal-link{
-        color: #3f3a64;
+        color: $secondary;
         font-size: 16px;
         font-weight: 500;
         display: flex;
@@ -133,7 +137,7 @@ methods:{
           bottom: -10px;
           width: 100%;
           height: 2px;
-          background-color: #20ad96;
+          background-color: $primary;
           border-radius: 20px;
           opacity: 0;
           transition: all .5s linear;
@@ -150,22 +154,6 @@ methods:{
     }
   }
 
-  .social{
-    display: flex;
-    gap: 27px;
-    li{
-      a{
-        color: #333333;
-        display: block;
-        transition: all .3s linear;
-        font-size: 1.1em;
-        &:hover{
-          color: black;
-          transform: scale(1.2);
-        }
-      }
-    }
-  }
 }
 
 .logo-menu{
@@ -196,7 +184,7 @@ methods:{
   a{
     font-size: .9em;
     line-height: 50px;
-    color: #3f3a64 ;
+    color: $primary ;
     &:hover{
       color: black;   
      
@@ -292,8 +280,10 @@ methods:{
   .social{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     width: 40px;
-    position: fixed;
+    position:absolute;
     top: 10px;
     right: 0;
     background-color: white;

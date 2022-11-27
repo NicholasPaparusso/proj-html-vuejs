@@ -4,6 +4,7 @@ import AppWidget from './components/AppWidget.vue';
 import AppStats from './components/AppStats.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppAboutMe from './components/AppAboutMe.vue';
+import AppCourse from './components/AppCourse.vue'
 export default {
 
 components:{
@@ -11,7 +12,7 @@ AppJumbo,
 AppWidget,
 AppStats,
 AppAboutMe,
-
+AppCourse,
 AppFooter
 },
 
@@ -23,6 +24,8 @@ AppFooter
   <AppWidget/>
   <AppStats/>
   <AppAboutMe/>
+  <AppCourse/>
+
   <AppFooter/>
 </template>
 

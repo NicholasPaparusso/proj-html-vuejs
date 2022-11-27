@@ -42,6 +42,7 @@ name : 'AppStats',
 @import '../style/partials/var' ;
   .np-container{
     padding-top: 120px;
+    padding-bottom: 120px;
 
     .np-col{
       position: relative;
@@ -72,7 +73,7 @@ name : 'AppStats',
     }
 
     h2{
-      color: #20ad96;
+      color: $primary;
       font-size: 40px;
       font-weight: 500;
       font-family: "Red Hat Display", sans-serif;
