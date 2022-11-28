@@ -96,4 +96,41 @@ export const store = reactive({
       imgUrl: 'product-book-10-400x400.jpg',
     },
   ],
+
+  partners: [
+    {
+      name: 'stylus',
+      imgUrl: 'client-logo-01-primary.png',
+    },
+
+    {
+      name: 'tree',
+      imgUrl: 'client-logo-02-primary.png',
+    },
+
+    {
+      name: 'brook',
+      imgUrl: 'client-logo-03-primary.png',
+    },
+
+    {
+      name: 'pencil',
+      imgUrl: 'client-logo-04-primary.png',
+    },
+
+    {
+      name: 'its alive',
+      imgUrl: 'client-logo-05-primary.png',
+    },
+
+    {
+      name: 'sixbase',
+      imgUrl: 'client-logo-06-primary.png',
+    },
+
+    {
+      name: 'nowhere famous',
+      imgUrl: 'client-logo-07-primary.png',
+    },
+  ]
 })

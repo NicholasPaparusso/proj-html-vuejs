@@ -31,7 +31,7 @@ data(){
     <div class="image-container">
       <img :src="getImage(this.book.imgUrl)" alt="">
 
-      <div>
+      <div class="hover">
       <AppBookHover/>
       </div>
 
@@ -48,6 +48,10 @@ data(){
 @import '../style/partials/var' ;
 
 .book{
+
+  &:hover .hover{
+    opacity: 1;
+  }
 
   h4{
         font-size: 20px;
@@ -90,6 +94,11 @@ span{
         img{
           transition: all 1s;
         }
+      }
+
+      .hover{
+        opacity: 0;
+        transition: all .8s;
       }
 }
 

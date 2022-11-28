@@ -28,7 +28,7 @@ VueCustomTooltip,
     <a href="#">
       <vue-custom-tooltip label="Purchase Maxcoach" position="is-left" ><i class="fa-solid fa-cart-shopping"></i></vue-custom-tooltip>
     </a>
-
+    
   </div>
 </template>
 

@@ -22,7 +22,8 @@ data(){
 
     <div class="row">
 
-      <div class="col-4">
+      <div class="col-12 col-xl-4 d-flex justify-center
+      align-items-center flex-column d-xl-block">
         <h5>BOOK STORE ONLINE</h5>
         <h3>Be Alpha With <span>Wingman's Book</span></h3>
         <ul>
@@ -34,7 +35,7 @@ data(){
         <AppButton text="Get Free Ebook" />
       </div>
 
-      <div class="col-7 offset-1">
+      <div class="col-12 pt-5  col-xl-7 offset-xl-1 pt-xl-0">
         <div class="row">
           <div v-for="(book, index) in store.books" :key="index" class="col-6">
             <AppBook :book="book"/>
