@@ -5,6 +5,7 @@ import AppStats from './components/AppStats.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppAboutMe from './components/AppAboutMe.vue';
 import AppCourse from './components/AppCourse.vue'
+import AppBookStore from './components/AppBookStore.vue';
 export default {
 
 components:{
@@ -13,6 +14,7 @@ AppWidget,
 AppStats,
 AppAboutMe,
 AppCourse,
+AppBookStore,
 AppFooter
 },
 
@@ -25,7 +27,8 @@ AppFooter
   <AppStats/>
   <AppAboutMe/>
   <AppCourse/>
-
+  <AppBookStore/>
+  
   <AppFooter/>
 </template>
 
