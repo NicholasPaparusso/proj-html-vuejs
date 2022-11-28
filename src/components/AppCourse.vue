@@ -1,10 +1,12 @@
 <script>
 import {store} from '../data/store'
+import AppButtonArrow from './AppButtonArrow.vue';
 import AppCard from './AppCard.vue';
 
 export default {
 components:{
-  AppCard,
+    AppCard,
+    AppButtonArrow,
 },
 
 name : 'AppCourse',
@@ -19,7 +21,7 @@ data(){
 </script>
 
 <template>
-  <div class="container np-container">
+  <div class="container-fluid container-xl np-container">
 
     <div class="row text-center">
       <h5>BEGIN YOUR JOURNEY AT MAXCOACH</h5>
@@ -27,10 +29,15 @@ data(){
     </div>
 
     <div class="row">
-      <div v-for="(card,index) in store.cards" :key="index" class="col-4">
+      <div v-for="(card,index) in store.cards" :key="index" class="col-md-6  col-xl-4">
         <AppCard :card="card"/>
       </div>
     </div>
+
+    <div class="row d-flexc justify-center pt-3">
+      <AppButtonArrow  text="View all courses"/>
+    </div>
+    
 
   </div>
 </template>
@@ -45,12 +52,13 @@ data(){
 
   h5{
     padding-top: 30px ;
-    font-size: 15px;
+    font-size: 17px;
     color: lighten($text, $amount: 20);
   }
 
   h2{
-    padding: 20px 0 80px 0;
+    color: $secondary;
+    padding: 20px 0 60px 0;
     font-weight: 400;
     font-size: 48px;
     span{

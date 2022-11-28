@@ -1,12 +1,13 @@
 <script>
 
 import AppHeader from './AppHeader.vue';
-
+import AppButtonArrow from './AppButtonArrow.vue';
 export default {
 name : 'AppJumbo',
 
 components:{
   AppHeader,
+  AppButtonArrow,
 }
 
 }
@@ -25,7 +26,7 @@ components:{
         <h5>I'M WINGMAN</h5>
         <h1>Peace On Earth A Wonderful Wish But No Way</h1>
         <p>Success isn't overnight. It's when everyday you get a little better than the day before. It all adds up.</p>
-        <button class="btn np-button">Get Started For Free <i class="fa-solid fa-arrow-right"></i> </button>
+        <AppButtonArrow text="Get Started For Free"/>
       </div>
 
       <div class="col-12 col-lg-6 image-container">
@@ -79,23 +80,6 @@ components:{
       font-weight: 500;
     }
 
-    .np-button{
-      width: 274px;
-      min-height: 55px;
-      background-color: $primary;
-      color: #fff;
-      font-weight: 700;
-      font-size: .8em;
-      transition: all .5s;
-
-      i{
-        margin-left: 15px;
-      }
-
-      &:hover{
-        background-color: $secondary;
-      }
-    }
   }
   .image-container{
      background-size: contain;

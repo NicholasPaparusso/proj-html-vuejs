@@ -92,7 +92,7 @@ name : 'AppAboutMe',
 .row:nth-of-type(2){
   display: flex;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 
 p{
   font-size: 24px;
@@ -122,7 +122,6 @@ p{
   img:first-of-type{
     border-radius: 10px;
     object-fit: cover;
-    object-position: top;
     transition: all .5s;
   }
 
