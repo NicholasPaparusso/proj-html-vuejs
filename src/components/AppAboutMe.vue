@@ -27,8 +27,10 @@ name : 'AppAboutMe',
     <div class="row">
 
       <div class="col-xl-7 yt">
-        <img src="../assets/img/home-movation-video-poster-670x450.jpg" alt="testimonial">
-        <img src="../assets/img/icon-youtube-play.png" alt="youtube-btn">
+        <div class="image-container">
+          <img src="../assets/img/home-movation-video-poster-670x450.jpg" alt="testimonial">
+          <img src="../assets/img/icon-youtube-play.png" alt="youtube-btn">
+        </div>
       </div>
 
       <div class="col-6 col-xl-3 offset-xl-1 ">
@@ -104,20 +106,20 @@ p{
 
 .yt{
   padding: 0;
-  position: relative;
-  top: 0;
-  width: 670px;
-  height: 450px;
   overflow: hidden;
   cursor: pointer;
   border-radius: 10px;
-  background-color: green;
-
   &:hover img:first-of-type{
     filter: brightness(1.05);
     transform: scale(1.1);
   }
 
+  .image-container{
+    max-width: 670px;
+    max-height: 450px;
+    position: relative;
+    top: 0;
+  }
 
   img:first-of-type{
     border-radius: 10px;
