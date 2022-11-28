@@ -1,19 +1,34 @@
 <script>
+import VueCustomTooltip from '@adamdehaven/vue-custom-tooltip'
+
 export default {
 name : 'AppWidget',
 
-
-
+components:{
+VueCustomTooltip,
+}
 }
 </script>
 
 <template>
   <div class="widget d-flex flex-column align-items-center">
    
-    <a> <i class="fa-solid fa-ruler-combined"></i><v-tooltip transition="slide-x-transition" activator="parent" location="start"  origin="end center" >Select Demo</v-tooltip></a>
-    <a> <i class="fa-solid fa-life-ring"></i> <v-tooltip transition="slide-x-transition" activator="parent" location="start"  origin="end center">Support Channel</v-tooltip> </a>
-    <a> <i class="fa-solid fa-book"></i> <v-tooltip transition="slide-x-transition" activator="parent" location="start"  origin="end center">Documentation</v-tooltip> </a>
-    <a> <i class="fa-solid fa-cart-shopping"> </i><v-tooltip transition="slide-x-transition"  activator="parent" location="start"  origin="end center">Purchase Maxcoach</v-tooltip> </a>
+    <a href="#">
+      <vue-custom-tooltip class="tip" label="Select Demo" position="is-left" ><i class="fa-solid fa-ruler-combined"></i></vue-custom-tooltip>
+    </a>
+
+    <a href="#"> 
+      <vue-custom-tooltip label="Support Channel" position="is-left" ><i class="fa-solid fa-life-ring"></i></vue-custom-tooltip>
+    </a>
+
+    <a href="#">
+      <vue-custom-tooltip label="Documentation" position="is-left" > <i class="fa-solid fa-book"></i></vue-custom-tooltip>
+    </a>
+
+    <a href="#">
+      <vue-custom-tooltip label="Purchase Maxcoach" position="is-left" ><i class="fa-solid fa-cart-shopping"></i></vue-custom-tooltip>
+    </a>
+
   </div>
 </template>
 

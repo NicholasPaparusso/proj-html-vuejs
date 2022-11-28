@@ -2,14 +2,10 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 
-import 'vuetify/styles'
-import { createVuetify } from 'vuetify'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import VueCustomTooltip from '@adamdehaven/vue-custom-tooltip'
 
-const vuetify = createVuetify({
-  components,
-  directives,
-})
 
-createApp(App).use(vuetify).mount('#app')
+createApp(App).use(VueCustomTooltip, {
+  borderRadius: 5,
+  background: '#20ad96',
+}).mount('#app')
