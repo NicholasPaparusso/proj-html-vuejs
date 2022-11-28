@@ -9,7 +9,7 @@ components:{
 </script>
 
 <template>
-<div class="container-fluid container np-container">
+<div class="container-fluid container-xl np-container">
   <AppCarousel/>
 </div>
 </template>

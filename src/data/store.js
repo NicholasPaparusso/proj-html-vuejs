@@ -2,6 +2,7 @@ import { reactive } from "vue";
 
 export const store = reactive({
   counterImage : 0,
+  counterStory: 1,
   cards: [
     {
       price: "$30.00",
@@ -97,40 +98,33 @@ export const store = reactive({
     },
   ],
 
-  partners: [
+  stories: [
     {
-      name: 'stylus',
-      imgUrl: 'client-logo-01-primary.png',
+      name: "Mina Hollace",
+      imgUrl: "testimonial-avata-02.jpg",
+      story: "I am free to learn at my own pace, follow my own schedule and choose the subject I want to learn from the syllabus. Great study portal for people like me.",
+      role: "Freelancer",
     },
 
     {
-      name: 'tree',
-      imgUrl: 'client-logo-02-primary.png',
+      name: "Madley Pondor",
+      imgUrl: "testimonial-avata-04.jpg",
+      story: "I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart and professional when dealing with students.",
+      role: "IT Specialist",
     },
 
     {
-      name: 'brook',
-      imgUrl: 'client-logo-03-primary.png',
+      name: "Luvic Dubble",
+      imgUrl: "testimonial-avata-01.jpg",
+      story: "I am happy with their arrangement of lessons and subjects. They reflect a scientific  investigation into effective methods to adopt for learners.",
+      role: "Private Tutor",
     },
 
     {
-      name: 'pencil',
-      imgUrl: 'client-logo-04-primary.png',
+      name: "Florence Themes",
+      imgUrl: "testimonial-avata-03.jpg",
+      story: "I'm a very strict person so I require everything to be organized and neat. Then, I'll be able to make things right and shine. MaxCoach guys just got me.",
+      role: "Multimedia Admin",
     },
-
-    {
-      name: 'its alive',
-      imgUrl: 'client-logo-05-primary.png',
-    },
-
-    {
-      name: 'sixbase',
-      imgUrl: 'client-logo-06-primary.png',
-    },
-
-    {
-      name: 'nowhere famous',
-      imgUrl: 'client-logo-07-primary.png',
-    },
-  ]
+  ],
 })

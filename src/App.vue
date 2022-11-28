@@ -6,7 +6,8 @@ import AppFooter from './components/AppFooter.vue';
 import AppAboutMe from './components/AppAboutMe.vue';
 import AppCourse from './components/AppCourse.vue'
 import AppBookStore from './components/AppBookStore.vue';
-import AppPartner from './components/AppPartner.vue'
+import AppPartner from './components/AppPartner.vue';
+import AppStories from './components/AppStories.vue';
 export default {
 
 components:{
@@ -18,6 +19,7 @@ AppCourse,
 AppBookStore,
 AppFooter,
 AppPartner,
+AppStories,
 },
 
 }
@@ -31,7 +33,7 @@ AppPartner,
   <AppCourse/>
   <AppBookStore/>
   <AppPartner/>
-
+  <AppStories/>
   <AppFooter/>
 </template>
 
