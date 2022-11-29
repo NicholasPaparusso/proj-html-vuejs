@@ -44,31 +44,35 @@ name : 'AppStats',
     padding-top: 120px;
     padding-bottom: 120px;
 
-    .np-col{
-      position: relative;
-      top: 0;
-      &:before{
-        content: '';
-        position: absolute;
-        left: 0;
-        display: block;
-        width: 100%;
-        height: 100%;
-        background-image: url('../assets/img/background-pattern-grid-line-06.png');
-      }
-    }
+    .row{
 
-    .np-col:last-of-type{
-      
-      &::after{
-        content: '';
-        position: absolute;
-        left:100%;
+      .np-col{
+        position: relative;
         top: 0;
-        display: block;
-        height: 100%;
-        width: 100%;
-        background-image: url('../assets/img/background-pattern-grid-line-06.png');
+        &:before{
+          content: '';
+          position: absolute;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url('../assets/img/background-pattern-grid-line-06.png');
+          background-repeat: no-repeat;
+        }
+      }
+  
+      .np-col:last-of-type{
+        
+        &::after{
+          content: '';
+          position: absolute;
+          left:100%;
+          top: 0;
+          display: block;
+          height: 100%;
+          width: 100%;
+          background-image: url('../assets/img/background-pattern-grid-line-06.png');
+        }
       }
     }
 

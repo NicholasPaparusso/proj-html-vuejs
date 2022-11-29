@@ -85,7 +85,6 @@ components:{
      background-size: contain;
      padding-top: 55px;
      background-repeat: no-repeat;
-     background-attachment:local;
      background-position: 50px 200px;
      display: flex;
      justify-content: center;

@@ -72,7 +72,7 @@ methods:{
 .container-fluid{
   padding: 0px ;
   position: relative;
-
+  overflow: hidden;
   .np-btn{
     position: absolute;
     height: 90px;
@@ -82,6 +82,10 @@ methods:{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+
+    i{
+      cursor: pointer;
+    }
   }
 }
 .np-col{

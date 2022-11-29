@@ -64,7 +64,7 @@ data(){
 
   h3{
     color: $secondary;
- 
+    
     font-weight: 400;
     font-size: 40px;
     line-height: 60px;
@@ -88,5 +88,10 @@ data(){
     }
   }
 
+  @media only screen and (max-width: 1200px) {
+    h3{
+      text-align: center;
+    }
+  }
 
 </style>

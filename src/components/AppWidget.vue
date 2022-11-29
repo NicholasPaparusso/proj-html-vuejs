@@ -5,10 +5,12 @@ export default {
 name : 'AppWidget',
 
 components:{
-VueCustomTooltip,
+VueCustomTooltip, 
 }
 }
 </script>
+
+
 
 <template>
   <div class="widget d-flex flex-column align-items-center">
